@@ -61,8 +61,8 @@ def is_num(input_info):
 3、使用random模块和字符串拼接的方法，随机生成一个130开头的手机号码
 '''
 # 1
-# tel = '130'+''.join(random.sample('1234567890', 8))
-# print(tel)
+tel = '130'+''.join(random.sample('1234567890', 8))
+print(tel)
 
 # 2
 # tel_str = ''
