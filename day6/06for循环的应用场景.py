@@ -35,7 +35,7 @@ for循环的应用
 
 
 # 字典的遍历
-dic = {"name": "musne", "age": 18, "gender": "nan"}
+dic = {"name": "mu", "age": 18, "gender": "nan"}
 
 # 直接遍历字典:遍历出来的是字典的键
 # for i in dic:
@@ -49,13 +49,13 @@ dic = {"name": "musne", "age": 18, "gender": "nan"}
 
 # 同时遍历字典的键和值：items
 # 遍历出来的是一个包含键和值的元组
-for i in dic.items():
-    print(i)
+# for i in dic.items():
+#     print(i)
 
 # 使用两个变量对元组进行拆包
-for k, v in dic.items():
-    print("key:",k)
-    print("value",v)
+# for k, v in dic.items():
+#     print("key:",k)
+#     print("value",v)
 #     print("hello python")
 
 # 元组拆包
@@ -74,7 +74,7 @@ for k, v in dic.items():
 
 
 # tu = (11, 22, 333)
-#
+
 # aa, bb, cc = tu
 # print(aa)
 # print(bb)
