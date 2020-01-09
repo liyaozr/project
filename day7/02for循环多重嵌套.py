@@ -18,10 +18,10 @@ Company:湖南零檬信息技术有限公司
  
 """
 
-# for i in range(1, 6):
-#     print()
-#     for j in range(1, i + 1):
-#         print('{} '.format(j), end="")
+for i in range(1, 6):
+    print()
+    for j in range(1, i + 1):
+        print('{} '.format(j), end="")
 
 #  列表推导式（扩展知识点：课纲之外的）
 #  需求：  快速生成一个 ["page1","page2","page3","page4"]

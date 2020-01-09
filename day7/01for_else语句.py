@@ -23,14 +23,14 @@ users = [{"user":"py1","pwd":"123"},{"user":"py2","pwd":"111"}]
 
 """
 # for  else语句
-# li = [1, 2, 3, 4, 5]
-#
-# for i in li:
-#     print(i)
-#     # if i == 3:
-#     #     break
-# else:
-#     print("for循环遍历结束之后会执行else,如果使用break跳出循环，则不会执行")
+li = [1, 2, 3, 4, 5]
+
+for i in li:
+    print(i)
+    # if i == 3:
+    #     break
+else:
+    print("for循环遍历结束之后会执行else,如果使用break跳出循环，则不会执行")
 #
 # print("程序运行结束")
 
