@@ -69,26 +69,26 @@ company:happy
 3、用户名没有被注册过，则判断两次输入的密码是否一致，一致的话则注册成功，否则给出对应的提示。
 '''
 
-# def register():
-#     user_list = [{'user': 'liyaozhi', 'pwd': '123'}, {'user': 'lily', 'pwd': '1234'}, {'user': 'musen', 'pwd': '111'}]
-#     while True:
-#         user = input('请输入用户名：')
-#         for item in user_list:
-#             if user == item['user']:
-#                 print('该用户名已被注册，请重新输入')
-#                 break
-#         else:
-#             while True:
-#                 pwd1 = input('请输入密码')
-#                 pwd2 = input('请再次输入密码')
-#                 if pwd1 == pwd2:
-#                     user_list.append({'user': user, 'pwd': pwd1})
-#                     print('注册成功')
-#                     break
-#                 else:
-#                     print('两次输入的密码不一致，请重新输入')
-#             break
-#     print(user_list)
-#
-#
-# register()
+def register():
+    user_list = [{'user': 'liyaozhi', 'pwd': '123'}, {'user': 'lily', 'pwd': '1234'}, {'user': 'musen', 'pwd': '111'}]
+    while True:
+        user = input('请输入用户名：')
+        for item in user_list:
+            if user == item['user']:
+                print('该用户名已被注册，请重新输入')
+                break
+        else:
+            while True:
+                pwd1 = input('请输入密码')
+                pwd2 = input('请再次输入密码')
+                if pwd1 == pwd2:
+                    user_list.append({'user': user, 'pwd': pwd1})
+                    print('注册成功')
+                    break
+                else:
+                    print('两次输入的密码不一致，请重新输入')
+            break
+    print(user_list)
+
+
+register()

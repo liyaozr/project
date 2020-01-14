@@ -83,27 +83,29 @@ def task2():
 
 
 def register():
-    with open('user_list.txt', 'a+', encoding='utf8') as f3:
-        user_list = f3.readlines()
-        print(user_list)
-    # while True:
-    #     user = input('请输入用户名：')
-    #     for item in user_list:
-    #         if user == item['user']:
-    #             print('该用户名已被注册，请重新输入')
-    #             break
-    #     else:
-    #         while True:
-    #             pwd1 = input('请输入密码')
-    #             pwd2 = input('请再次输入密码')
-    #             if pwd1 == pwd2:
-    #                 user_list.append({'user': user, 'pwd': pwd1})
-    #                 print('注册成功')
-    #                 break
-    #             else:
-    #                 print('两次输入的密码不一致，请重新输入')
-    #         break
-    # print(user_list)
+    with open('user_list.txt', 'r+', encoding='utf8') as f3:
+        user_list = eval(f3.read())
+        while True:
+            user = input('请输入用户名：')
+            for item in user_list:
+                if user == item['user']:
+                    print('该用户名已被注册，请重新输入')
+                    break
+            else:
+                while True:
+                    pwd1 = input('请输入密码')
+                    pwd2 = input('请再次输入密码')
+                    if pwd1 == pwd2:
+                        user_list.append({'user': user, 'pwd': pwd1})
+                        print('注册成功')
+                        break
+                    else:
+                        print('两次输入的密码不一致，请重新输入')
+                break
+        user_list = str(user_list)
+        f3.seek(0)
+        f3.truncate()
+        f3.write(user_list)
 
 
 register()
