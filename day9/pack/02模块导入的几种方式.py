@@ -31,24 +31,24 @@ from 文件夹.文件夹 import *     # 导入指定文件夹中所有的模块
 """
 
 # from login import a
-# from py26_09day.pack.login import login_func,a
+# from py26_09day.practice.login import login_func,a
 #
 # # print(a)
 # login_func()
 
 # 给导入的内容起别名
-# from py26_09day.pack.login import login_func as lg
+# from py26_09day.practice.login import login_func as lg
 #
 # lg()
 
 #
-# from py26_09day.pack.login import login_func
+# from py26_09day.practice.login import login_func
 #
-# from py26_09day.pack.register import register_func
+# from py26_09day.practice.register import register_func
 
 # 不推荐使用
-# from py26_09day.pack.login import *
-# from py26_09day.pack.register import *
+# from py26_09day.practice.login import *
+# from py26_09day.practice.register import *
 #
 # login_func()
 
