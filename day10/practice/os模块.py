@@ -8,6 +8,13 @@ company:happy
 
 import os
 
+dir = os.path.dirname(__file__)
+dir_list = os.listdir()
+# print(dir_list)
+for item in dir_list:
+    item_dir = os.path.join(dir + item)
+    print(item_dir)
+
 # 获取父级目录，一层一层往上取
 # d1 = os.path.dirname(__file__)
 #
@@ -29,3 +36,5 @@ import os
 
 
 # print(a)
+# print(__file__)
+# print(os.path.abspath(__file__))
