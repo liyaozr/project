@@ -9,9 +9,9 @@ Company:Happy
 1、写一段代码，运行的时候在控制台依次提示提示输入姓名，年龄、性别
 最终在控制台按照以下格式输出
 '''
-# name = input('请输入您的姓名：')
-# age = int(input('请输入您的年龄：'))
-# sex = input('请输入您的性别：')
+name = input('请输入您的姓名：')
+age = int(input('请输入您的年龄：'))
+sex = input('请输入您的性别：')
 # # 1:
 # print('''
 # ***********
@@ -21,13 +21,13 @@ Company:Happy
 # ***********
 # ''' % (name,age,sex))
 # # 2:
-# print('''
-# ***********
-# 姓名：{_name}
-# 年龄：{_age}
-# 性别：{_sex}
-# ***********
-# '''.format(_name = name,_age = age,_sex = sex))
+print('''
+***********
+姓名：{name}
+年龄：{age}
+性别：{sex}
+***********
+'''.format(name=name, age=age, sex=sex))
 # # 3
 # print('''
 # ***********
