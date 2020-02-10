@@ -10,7 +10,6 @@ import unittest
 
 from day13.register import register
 
-
 class RegisterTest(unittest.TestCase):
     def test_register_success(self):
         # 注册成功

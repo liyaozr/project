@@ -70,11 +70,11 @@ print(m.attr1)
 # --------------------delattr---------------
 # 在类外面删除类属性
 # 方法一
-# del MyClass.ttt
+del MyClass.ttt
 
 # 方式二
-# delattr(MyClass,"ttt")
-# print(MyClass.ttt)
+delattr(MyClass,"ttt")
+print(MyClass.ttt)
 
 
 # 在类外面删除对象属性
@@ -82,7 +82,7 @@ print(m.attr1)
 del m.gender
 
 # 方式二
-# delattr(m, "gender")
+delattr(m, "gender")
 
 
 print(m.gender)
