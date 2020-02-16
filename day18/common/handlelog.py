@@ -5,11 +5,11 @@ time:2020/2/12
 company:happy
 ============================
 """
+import os
 import logging
 from logging.handlers import TimedRotatingFileHandler
 from common.handleconfig import conf
 from common.handlepath import LOGDIR
-import os
 
 
 class HandleLog():

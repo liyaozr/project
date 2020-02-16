@@ -8,8 +8,6 @@ company:happy
 
 import os
 
-# dirname
-
 # 获取当前文件的绝对路劲
 res = os.path.abspath(__file__)
 # print(res)
