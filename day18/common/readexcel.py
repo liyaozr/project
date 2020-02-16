@@ -5,6 +5,7 @@ time:2020/1/24
 company:happy
 ============================
 """
+
 import openpyxl
 
 
@@ -23,6 +24,7 @@ class ReadExcel():
         self.open()
         # 获取数据，注意！！！要转换为列表格式，否则无法循环
         datas = list(self.sh.rows)
+        # print(datas[0])
         # 获取标题
         title = [i.value for i in datas[0]]
         cases = []

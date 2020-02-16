@@ -116,8 +116,8 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">1219单元测试报告</h1>
 <p class='attribute'><strong>测试人员 : </strong> 最菜同学</p>
-<p class='attribute'><strong>开始时间 : </strong> 2020-02-11 22:32:08</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.563696</p>
+<p class='attribute'><strong>开始时间 : </strong> 2020-02-10 20:26:08</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:01.187987</p>
 <p class='attribute'><strong>测试结果 : </strong> 共 12，通过 11，失败 1，通过率= 91.67%</p>
 
 <p class='description'></p>
@@ -149,7 +149,7 @@ function html_escape(s) {
 </tr>
 
 <tr class='passClass warning'>
-    <td>day15.task.testcases.LoginTest</td>
+    <td>py26_16day.demo2.testcases.LoginTestCase</td>
     <td class="text-center">5</td>
     <td class="text-center">5</td>
     <td class="text-center">0</td>
@@ -183,7 +183,7 @@ function html_escape(s) {
 </tr>
 
 <tr class='failClass warning'>
-    <td>day15.task.testcases.RegisterTest</td>
+    <td>py26_16day.demo2.testcases.RegisterTestCase</td>
     <td class="text-center">7</td>
     <td class="text-center">6</td>
     <td class="text-center">1</td>
@@ -233,13 +233,13 @@ function html_escape(s) {
     <pre>
     
 ft2_7: Traceback (most recent call last):
-  File "E:\project\day15\task\testcases.py", line 66, in test_register
-    raise E
-  File "E:\project\day15\task\testcases.py", line 63, in test_register
-    self.assertEqual(res, expected)
-AssertionError: {'code': 1, 'msg': '注册成功'} != {'code': 0, 'msg': '账号和密码必须在6-18位之间'}
-- {'code': 1, 'msg': '注册成功'}
-+ {'code': 0, 'msg': '账号和密码必须在6-18位之间'}
+  File "C:\project\py26_project\py26_16day\demo2\testcases.py", line 40, in test_register
+    raise e
+  File "C:\project\py26_project\py26_16day\demo2\testcases.py", line 36, in test_register
+    self.assertEqual(excepted, res)
+AssertionError: {'code': 0, 'msg': '账号和密码必须在6-18位之间'} != {'code': 1, 'msg': '注册成功'}
+- {'code': 0, 'msg': '账号和密码必须在6-18位之间'}
++ {'code': 1, 'msg': '注册成功'}
 
 
     </pre>
