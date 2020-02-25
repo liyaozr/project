@@ -24,4 +24,4 @@ REPORTDIR = os.path.join(BASEDIR, 'reports')
 CONFDIR = os.path.join(BASEDIR, 'conf')
 
 # 日志文件的路径
-LOGDIR = os.path.join(BASEDIR, 'logs')
+LOGDIR = os.path.join(BASEDIR, 'log')

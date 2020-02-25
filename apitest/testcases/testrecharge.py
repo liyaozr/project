@@ -7,8 +7,8 @@ company:happy
 """
 import os
 import unittest
-from library.ddt import ddt, data
 import jsonpath
+from library.ddt import ddt, data
 from common.readexcel import ReadExcel
 from common.handlepath import DATADIR
 from common.handleconf import conf

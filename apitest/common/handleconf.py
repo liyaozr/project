@@ -6,11 +6,11 @@ company:happy
 ============================
 """
 import os
-from configparser import ConfigParser
+from configparser import RawConfigParser
 from common.handlepath import CONFDIR
 
 
-class HandleConf(ConfigParser):
+class HandleConf(RawConfigParser):
     def __init__(self, filename):
         super().__init__()
         self.filename = filename
@@ -22,3 +22,10 @@ class HandleConf(ConfigParser):
 
 
 conf = HandleConf(os.path.join(CONFDIR, "config.ini"))
+
+'''
+RawConfigParser 与 ConfigParser
+一般情况都是使用ConfigParser这个方法，但是当我们配置中有%(filename)s这种格式的配置的时候，可能会出现以下问题：
+option 'xxx' in section 'xxx' contains an interpolation key ‘asctime‘ which is not a valid option name
+这个时候使用RawConfigParser可以解决
+'''
