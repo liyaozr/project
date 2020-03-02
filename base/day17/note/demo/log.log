@@ -1,0 +1,12 @@
+这个是error等级的日志
+这个是critical等级的日志
+这个是error等级的日志
+这个是critical等级的日志
+这个是error等级的日志
+这个是critical等级的日志
+这个是error等级的日志
+这个是critical等级的日志
+2020-02-12 20:58:55,724 - [02创建日志收集器.py-->line:66] - ERROR: 这个是error等级的日志
+2020-02-12 20:58:55,724 - [02创建日志收集器.py-->line:67] - CRITICAL: 这个是critical等级的日志
+2020-02-12 23:22:56,321 - [handlelog.py-->line:43] - ERROR: 这个是error等级的日志
+2020-02-12 23:22:56,322 - [handlelog.py-->line:44] - CRITICAL: 这个是critical等级的日志
