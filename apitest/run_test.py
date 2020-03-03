@@ -21,7 +21,7 @@ suite.addTest(loader.discover(CASEDIR))
 report_file = os.path.join(REPORTDIR, 'report.html')
 runner = HTMLTestRunner(stream=open(report_file, 'wb'),
                         title='前程贷接口测试报告',
-                        description='这是一份关于前程贷项目的接口测试报告--优化数据替换方法',
+                        description='这是一份关于前程贷项目的接口测试报告',
                         tester='鹿梨')
 # 执行测试运行程序
 runner.run(suite)

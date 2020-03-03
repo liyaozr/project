@@ -63,9 +63,9 @@ class TestLoans(unittest.TestCase):
         except AssertionError as E:
             print('预期结果：', expected['msg'])
             print('实际结果：', res['msg'])
-            self.excel.write_data(row=row, column=7, value='不通过')
+            self.excel.write_data(row=row, column=8, value='不通过')
             log.error('{}用例不通过'.format(case['title']))
             log.exception(E)
             raise E
         else:
-            self.excel.write_data(row=row, column=7, value='通过')
+            self.excel.write_data(row=row, column=8, value='通过')

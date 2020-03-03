@@ -76,4 +76,4 @@ class TestInfo(unittest.TestCase):
             log.exception(E)
             raise E
         else:
-            self.excel.write_data(row=row, column=8, value='通过')
+            self.excel.write_data(row=row, column=7, value='通过')

@@ -116,19 +116,19 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">前程贷接口测试报告</h1>
 <p class='attribute'><strong>测试人员 : </strong> 鹿梨</p>
-<p class='attribute'><strong>开始时间 : </strong> 2020-03-03 18:04:25</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:22.258155</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 124，通过 90，失败 32，错误 2，通过率= 72.58%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2020-03-03 23:39:30</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:40.628167</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 123，通过 86，失败 36，错误 1，通过率= 69.92%</p>
 
-<p class='description'>这是一份关于前程贷项目的接口测试报告--优化数据替换方法</p>
+<p class='description'>这是一份关于前程贷项目的接口测试报告</p>
 </div>
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 72.58% }</a>
-<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 32 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 90 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 124 }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 69.92% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 36 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 86 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 123 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -176,11 +176,11 @@ function html_escape(s) {
 ft1_2: 预期结果： {'code': 1, 'msg': '手机号码为空'}
 实际结果： {'code': 2, 'msg': '手机号码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test1_login.py", line 48, in test_login
+  File "E:\project\apitest\testcases\test1_login.py", line 48, in test_login
     raise E
-  File "D:\project\apitest\testcases\test1_login.py", line 40, in test_login
+  File "E:\project\apitest\testcases\test1_login.py", line 40, in test_login
     self.assertEqual(expected['code'], res['code'])
 AssertionError: 1 != 2
 
@@ -204,11 +204,11 @@ AssertionError: 1 != 2
 ft1_3: 预期结果： {'code': 1, 'msg': '密码为空'}
 实际结果： {'code': 2, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test1_login.py", line 48, in test_login
+  File "E:\project\apitest\testcases\test1_login.py", line 48, in test_login
     raise E
-  File "D:\project\apitest\testcases\test1_login.py", line 40, in test_login
+  File "E:\project\apitest\testcases\test1_login.py", line 40, in test_login
     self.assertEqual(expected['code'], res['code'])
 AssertionError: 1 != 2
 
@@ -360,11 +360,11 @@ AssertionError: 1 != 2
 ft3_7: 预期结果： 数字格式化异常
 实际结果： OK
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test3_recharge.py", line 87, in test_recharge
+  File "E:\project\apitest\testcases\test3_recharge.py", line 87, in test_recharge
     raise E
-  File "D:\project\apitest\testcases\test3_recharge.py", line 72, in test_recharge
+  File "E:\project\apitest\testcases\test3_recharge.py", line 72, in test_recharge
     self.assertEqual(expected['code'], res['code'])
 AssertionError: 2 != 0
 
@@ -393,11 +393,11 @@ AssertionError: 2 != 0
 ft3_9: 预期结果： 充值金额必须大于0并且小于或者等于500000
 实际结果： OK
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test3_recharge.py", line 87, in test_recharge
+  File "E:\project\apitest\testcases\test3_recharge.py", line 87, in test_recharge
     raise E
-  File "D:\project\apitest\testcases\test3_recharge.py", line 72, in test_recharge
+  File "E:\project\apitest\testcases\test3_recharge.py", line 72, in test_recharge
     self.assertEqual(expected['code'], res['code'])
 AssertionError: 2 != 0
 
@@ -421,11 +421,11 @@ AssertionError: 2 != 0
 ft3_10: 预期结果： 充值金额必须大于0并且小于或者等于500000
 实际结果： 余额必须大于0并且小于或者等于500000
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test3_recharge.py", line 87, in test_recharge
+  File "E:\project\apitest\testcases\test3_recharge.py", line 87, in test_recharge
     raise E
-  File "D:\project\apitest\testcases\test3_recharge.py", line 73, in test_recharge
+  File "E:\project\apitest\testcases\test3_recharge.py", line 73, in test_recharge
     self.assertEqual(expected['msg'], res['msg'])
 AssertionError: '充值金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
 - 充值金额必须大于0并且小于或者等于500000
@@ -454,11 +454,11 @@ AssertionError: '充值金额必须大于0并且小于或者等于500000' != '�
 ft3_11: 预期结果： 充值金额为空
 实际结果： 数字格式化异常
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test3_recharge.py", line 87, in test_recharge
+  File "E:\project\apitest\testcases\test3_recharge.py", line 87, in test_recharge
     raise E
-  File "D:\project\apitest\testcases\test3_recharge.py", line 72, in test_recharge
+  File "E:\project\apitest\testcases\test3_recharge.py", line 72, in test_recharge
     self.assertEqual(expected['code'], res['code'])
 AssertionError: 1 != 2
 
@@ -487,11 +487,11 @@ AssertionError: 1 != 2
 ft3_13: 预期结果： 充值金额必须大于0并且小于或者等于500000
 实际结果： 余额必须大于0并且小于或者等于500000
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test3_recharge.py", line 87, in test_recharge
+  File "E:\project\apitest\testcases\test3_recharge.py", line 87, in test_recharge
     raise E
-  File "D:\project\apitest\testcases\test3_recharge.py", line 73, in test_recharge
+  File "E:\project\apitest\testcases\test3_recharge.py", line 73, in test_recharge
     self.assertEqual(expected['msg'], res['msg'])
 AssertionError: '充值金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
 - 充值金额必须大于0并且小于或者等于500000
@@ -514,30 +514,122 @@ AssertionError: '充值金额必须大于0并且小于或者等于500000' != '�
 <tr class='failClass warning'>
     <td>test4_withdraw.TestWithdraw</td>
     <td class="text-center">14</td>
-    <td class="text-center">8</td>
-    <td class="text-center">6</td>
+    <td class="text-center">4</td>
+    <td class="text-center">10</td>
     <td class="text-center">0</td>
     <td class="text-center"><a href="javascript:showClassDetail('c4',14)" class="detail" id='c4'>详细</a></td>
 </tr>
 
-<tr id='pt4_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_withdaw_01: 提现成功-整数</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+<tr id='ft4_1' class='none'>
+    <td class='failCase'><div class='testcase'>test_withdaw_01: 提现成功-整数</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft4_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft4_1'>失败</button>
+    <div id='div_ft4_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft4_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft4_1'>失败</button>
+    <div id='div_ft4_1' class="collapse in" align="left">
+    <pre>
+    
+ft4_1: 预期结果： OK
+实际结果： 余额不足
+Traceback (most recent call last):
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\project\apitest\testcases\test4_withdraw.py", line 86, in test_withdaw
+    raise E
+  File "E:\project\apitest\testcases\test4_withdraw.py", line 71, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+AssertionError: 0 != 1002
+
+
+    </pre>
+    </div>
+    </td>
 </tr>
 
-<tr id='pt4_2' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_withdaw_02: 提现成功-1位小数</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+<tr id='ft4_2' class='none'>
+    <td class='failCase'><div class='testcase'>test_withdaw_02: 提现成功-1位小数</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft4_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft4_2'>失败</button>
+    <div id='div_ft4_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft4_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft4_2'>失败</button>
+    <div id='div_ft4_2' class="collapse in" align="left">
+    <pre>
+    
+ft4_2: 预期结果： OK
+实际结果： 余额不足
+Traceback (most recent call last):
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\project\apitest\testcases\test4_withdraw.py", line 86, in test_withdaw
+    raise E
+  File "E:\project\apitest\testcases\test4_withdraw.py", line 71, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+AssertionError: 0 != 1002
+
+
+    </pre>
+    </div>
+    </td>
 </tr>
 
-<tr id='pt4_3' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_withdaw_03: 提现成功-2位小数</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+<tr id='ft4_3' class='none'>
+    <td class='failCase'><div class='testcase'>test_withdaw_03: 提现成功-2位小数</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft4_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft4_3'>失败</button>
+    <div id='div_ft4_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft4_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft4_3'>失败</button>
+    <div id='div_ft4_3' class="collapse in" align="left">
+    <pre>
+    
+ft4_3: 预期结果： OK
+实际结果： 余额不足
+Traceback (most recent call last):
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\project\apitest\testcases\test4_withdraw.py", line 86, in test_withdaw
+    raise E
+  File "E:\project\apitest\testcases\test4_withdraw.py", line 71, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+AssertionError: 0 != 1002
+
+
+    </pre>
+    </div>
+    </td>
 </tr>
 
-<tr id='pt4_4' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_withdaw_04: 提现成功-50万</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+<tr id='ft4_4' class='none'>
+    <td class='failCase'><div class='testcase'>test_withdaw_04: 提现成功-50万</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft4_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft4_4'>失败</button>
+    <div id='div_ft4_4' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft4_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft4_4'>失败</button>
+    <div id='div_ft4_4' class="collapse in" align="left">
+    <pre>
+    
+ft4_4: 预期结果： OK
+实际结果： 余额不足
+Traceback (most recent call last):
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\project\apitest\testcases\test4_withdraw.py", line 86, in test_withdaw
+    raise E
+  File "E:\project\apitest\testcases\test4_withdraw.py", line 71, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+AssertionError: 0 != 1002
+
+
+    </pre>
+    </div>
+    </td>
 </tr>
 
 <tr id='pt4_5' class='hiddenRow'>
@@ -559,11 +651,11 @@ AssertionError: '充值金额必须大于0并且小于或者等于500000' != '�
 ft4_6: 预期结果： 无权限访问，请检查参数
 实际结果： 余额不足
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test4_withdraw.py", line 86, in test_withdaw
+  File "E:\project\apitest\testcases\test4_withdraw.py", line 86, in test_withdaw
     raise E
-  File "D:\project\apitest\testcases\test4_withdraw.py", line 71, in test_withdaw
+  File "E:\project\apitest\testcases\test4_withdraw.py", line 71, in test_withdaw
     self.assertEqual(expected['code'], res['code'])
 AssertionError: 1007 != 1002
 
@@ -585,15 +677,15 @@ AssertionError: 1007 != 1002
     <pre>
     
 ft4_7: 预期结果： 数值参数格式不正确
-实际结果： OK
+实际结果： 余额不足
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test4_withdraw.py", line 86, in test_withdaw
+  File "E:\project\apitest\testcases\test4_withdraw.py", line 86, in test_withdaw
     raise E
-  File "D:\project\apitest\testcases\test4_withdraw.py", line 71, in test_withdaw
+  File "E:\project\apitest\testcases\test4_withdraw.py", line 71, in test_withdaw
     self.assertEqual(expected['code'], res['code'])
-AssertionError: 2 != 0
+AssertionError: 2 != 1002
 
 
     </pre>
@@ -618,15 +710,15 @@ AssertionError: 2 != 0
     <pre>
     
 ft4_9: 预期结果： 提现金额必须大于0并且小于或者等于500000
-实际结果： OK
+实际结果： 余额不足
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test4_withdraw.py", line 86, in test_withdaw
+  File "E:\project\apitest\testcases\test4_withdraw.py", line 86, in test_withdaw
     raise E
-  File "D:\project\apitest\testcases\test4_withdraw.py", line 71, in test_withdaw
+  File "E:\project\apitest\testcases\test4_withdraw.py", line 71, in test_withdaw
     self.assertEqual(expected['code'], res['code'])
-AssertionError: 2 != 0
+AssertionError: 2 != 1002
 
 
     </pre>
@@ -648,11 +740,11 @@ AssertionError: 2 != 0
 ft4_10: 预期结果： 提现金额必须大于0并且小于或者等于500000
 实际结果： 余额必须大于0并且小于或者等于5000000
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test4_withdraw.py", line 86, in test_withdaw
+  File "E:\project\apitest\testcases\test4_withdraw.py", line 86, in test_withdaw
     raise E
-  File "D:\project\apitest\testcases\test4_withdraw.py", line 72, in test_withdaw
+  File "E:\project\apitest\testcases\test4_withdraw.py", line 72, in test_withdaw
     self.assertEqual(expected['msg'], res['msg'])
 AssertionError: '提现金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
 - 提现金额必须大于0并且小于或者等于500000
@@ -681,11 +773,11 @@ AssertionError: '提现金额必须大于0并且小于或者等于500000' != '�
 ft4_11: 预期结果： 提现金额为空
 实际结果： 余额为空
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test4_withdraw.py", line 86, in test_withdaw
+  File "E:\project\apitest\testcases\test4_withdraw.py", line 86, in test_withdaw
     raise E
-  File "D:\project\apitest\testcases\test4_withdraw.py", line 72, in test_withdaw
+  File "E:\project\apitest\testcases\test4_withdraw.py", line 72, in test_withdaw
     self.assertEqual(expected['msg'], res['msg'])
 AssertionError: '提现金额为空' != '余额为空'
 - 提现金额为空
@@ -717,11 +809,11 @@ AssertionError: '提现金额为空' != '余额为空'
 ft4_13: 预期结果： 提现金额必须大于0并且小于或者等于500000
 实际结果： 余额必须大于0并且小于或者等于5000000
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test4_withdraw.py", line 86, in test_withdaw
+  File "E:\project\apitest\testcases\test4_withdraw.py", line 86, in test_withdaw
     raise E
-  File "D:\project\apitest\testcases\test4_withdraw.py", line 72, in test_withdaw
+  File "E:\project\apitest\testcases\test4_withdraw.py", line 72, in test_withdaw
     self.assertEqual(expected['msg'], res['msg'])
 AssertionError: '提现金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
 - 提现金额必须大于0并且小于或者等于500000
@@ -797,13 +889,13 @@ AssertionError: '提现金额必须大于0并且小于或者等于500000' != '�
     <pre>
     
 ft5_8: 预期结果： {'code': 2, 'msg': '数字格式化异常'}
-实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 18354, 'member_id': 8618, 'title': '报名 Java 全栈自动化课程', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 18:04:35.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 21888, 'member_id': 8618, 'title': '报名 Java 全栈自动化课程', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 23:39:46.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test5_add.py", line 81, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 81, in test_add
     raise E
-  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 67, in test_add
     self.assertEqual(expected['code'], res['code'])
 AssertionError: 2 != 0
 
@@ -825,13 +917,13 @@ AssertionError: 2 != 0
     <pre>
     
 ft5_9: 预期结果： {'code': 2, 'msg': '数字格式化异常'}
-实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 18355, 'member_id': 8618, 'title': '报名 Java 全栈自动化课程', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 18:04:35.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 21889, 'member_id': 8618, 'title': '报名 Java 全栈自动化课程', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 23:39:46.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test5_add.py", line 81, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 81, in test_add
     raise E
-  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 67, in test_add
     self.assertEqual(expected['code'], res['code'])
 AssertionError: 2 != 0
 
@@ -858,13 +950,13 @@ AssertionError: 2 != 0
     <pre>
     
 ft5_11: 预期结果： {'code': 1, 'msg': '标题为空'}
-实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 18356, 'member_id': 8618, 'title': ' ', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 18:04:35.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 21890, 'member_id': 8618, 'title': ' ', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 23:39:47.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test5_add.py", line 81, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 81, in test_add
     raise E
-  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 67, in test_add
     self.assertEqual(expected['code'], res['code'])
 AssertionError: 1 != 0
 
@@ -886,13 +978,13 @@ AssertionError: 1 != 0
     <pre>
     
 ft5_12: 预期结果： {'code': 2, 'msg': '数字格式化异常'}
-实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 18357, 'member_id': 8618, 'title': '报名 Java 全栈自动化课程', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 18:04:35.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 21891, 'member_id': 8618, 'title': '报名 Java 全栈自动化课程', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 23:39:47.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test5_add.py", line 81, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 81, in test_add
     raise E
-  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 67, in test_add
     self.assertEqual(expected['code'], res['code'])
 AssertionError: 2 != 0
 
@@ -914,13 +1006,13 @@ AssertionError: 2 != 0
     <pre>
     
 ft5_13: 预期结果： {'code': 2, 'msg': '数字格式化异常'}
-实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 18358, 'member_id': 8618, 'title': '报名 Java 全栈自动化课程', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 18:04:36.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 21892, 'member_id': 8618, 'title': '报名 Java 全栈自动化课程', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 23:39:47.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test5_add.py", line 81, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 81, in test_add
     raise E
-  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 67, in test_add
     self.assertEqual(expected['code'], res['code'])
 AssertionError: 2 != 0
 
@@ -957,13 +1049,13 @@ AssertionError: 2 != 0
     <pre>
     
 ft5_17: 预期结果： {'code': 2, 'msg': '数字格式化异常'}
-实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 18359, 'member_id': 8618, 'title': '报名 Java 全栈自动化课程', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 18:04:36.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 21893, 'member_id': 8618, 'title': '报名 Java 全栈自动化课程', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 23:39:48.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test5_add.py", line 81, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 81, in test_add
     raise E
-  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 67, in test_add
     self.assertEqual(expected['code'], res['code'])
 AssertionError: 2 != 0
 
@@ -985,13 +1077,13 @@ AssertionError: 2 != 0
     <pre>
     
 ft5_18: 预期结果： {'code': 2, 'msg': '数字格式化异常'}
-实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 18360, 'member_id': 8618, 'title': '报名 Java 全栈自动化课程', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 18:04:36.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 21894, 'member_id': 8618, 'title': '报名 Java 全栈自动化课程', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 23:39:48.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test5_add.py", line 81, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 81, in test_add
     raise E
-  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 67, in test_add
     self.assertEqual(expected['code'], res['code'])
 AssertionError: 2 != 0
 
@@ -1058,13 +1150,13 @@ AssertionError: 2 != 0
     <pre>
     
 ft5_28: 预期结果： {'code': 2, 'msg': '数字格式化异常'}
-实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 18363, 'member_id': 8618, 'title': '报名 Java 全栈自动化课程', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 18:04:38.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 21897, 'member_id': 8618, 'title': '报名 Java 全栈自动化课程', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 23:39:51.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test5_add.py", line 81, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 81, in test_add
     raise E
-  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 67, in test_add
     self.assertEqual(expected['code'], res['code'])
 AssertionError: 2 != 0
 
@@ -1086,13 +1178,13 @@ AssertionError: 2 != 0
     <pre>
     
 ft5_29: 预期结果： {'code': 2, 'msg': '数字格式化异常'}
-实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 18364, 'member_id': 8618, 'title': '报名 Java 全栈自动化课程', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 18:04:38.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 21898, 'member_id': 8618, 'title': '报名 Java 全栈自动化课程', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 23:39:51.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test5_add.py", line 81, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 81, in test_add
     raise E
-  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 67, in test_add
     self.assertEqual(expected['code'], res['code'])
 AssertionError: 2 != 0
 
@@ -1129,13 +1221,13 @@ AssertionError: 2 != 0
     <pre>
     
 ft5_33: 预期结果： {'code': 2, 'msg': '数字格式化异常'}
-实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 18365, 'member_id': 8618, 'title': '报名 Java 全栈自动化课程', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 18:04:38.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 21899, 'member_id': 8618, 'title': '报名 Java 全栈自动化课程', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 23:39:52.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test5_add.py", line 81, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 81, in test_add
     raise E
-  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 67, in test_add
     self.assertEqual(expected['code'], res['code'])
 AssertionError: 2 != 0
 
@@ -1157,13 +1249,13 @@ AssertionError: 2 != 0
     <pre>
     
 ft5_34: 预期结果： {'code': 2, 'msg': '数字格式化异常'}
-实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 18366, 'member_id': 8618, 'title': '报名 Java 全栈自动化课程', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 18:04:38.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 21900, 'member_id': 8618, 'title': '报名 Java 全栈自动化课程', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 23:39:52.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test5_add.py", line 81, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 81, in test_add
     raise E
-  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 67, in test_add
     self.assertEqual(expected['code'], res['code'])
 AssertionError: 2 != 0
 
@@ -1190,13 +1282,13 @@ AssertionError: 2 != 0
     <pre>
     
 ft5_36: 预期结果： {'code': 2, 'msg': '数字格式化异常'}
-实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 18367, 'member_id': 8618, 'title': '报名 Java 全栈自动化课程', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 18:04:39.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 21901, 'member_id': 8618, 'title': '报名 Java 全栈自动化课程', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 23:39:53.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test5_add.py", line 81, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 81, in test_add
     raise E
-  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 67, in test_add
     self.assertEqual(expected['code'], res['code'])
 AssertionError: 2 != 0
 
@@ -1218,13 +1310,13 @@ AssertionError: 2 != 0
     <pre>
     
 ft5_37: 预期结果： {'code': 2, 'msg': '数字格式化异常'}
-实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 18368, 'member_id': 8618, 'title': '报名 Java 全栈自动化课程', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 18:04:39.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 21902, 'member_id': 8618, 'title': '报名 Java 全栈自动化课程', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-03-03 23:39:53.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test5_add.py", line 81, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 81, in test_add
     raise E
-  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+  File "E:\project\apitest\testcases\test5_add.py", line 67, in test_add
     self.assertEqual(expected['code'], res['code'])
 AssertionError: 2 != 0
 
@@ -1293,18 +1385,34 @@ AssertionError: 2 != 0
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr class='failClass warning'>
+<tr class='errorClass warning'>
     <td>test7_invest.TestInvest</td>
-    <td class="text-center">15</td>
+    <td class="text-center">16</td>
     <td class="text-center">11</td>
     <td class="text-center">4</td>
-    <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c7',15)" class="detail" id='c7'>详细</a></td>
+    <td class="text-center">1</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c7',16)" class="detail" id='c7'>详细</a></td>
 </tr>
 
 <tr id='pt7_1' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_invest_01: 投资成功</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt7_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt7_1'>通过</button>
+    <div id='div_pt7_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt7_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt7_1'>通过</button>
+    <div id='div_pt7_1' class="collapse in" align="left">
+    <pre>
+    
+pt7_1: 180
+200000.00
+300.00
+
+
+    </pre>
+    </div>
+    </td>
 </tr>
 
 <tr id='pt7_2' class='hiddenRow'>
@@ -1329,13 +1437,13 @@ AssertionError: 2 != 0
     <pre>
     
 ft7_4: 预期结果： {'code': 2, 'msg': '数值参数格式错误'}
-实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 1198, 'member_id': 8129, 'loan_id': 4, 'amount': 400.0, 'create_time': '2020-03-03 18:04:42', 'is_valid': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 1684, 'member_id': 8129, 'loan_id': 180, 'amount': 100.0, 'create_time': '2020-03-03 23:39:59', 'is_valid': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test7_invest.py", line 95, in test_invest
+  File "E:\project\apitest\testcases\test7_invest.py", line 144, in test_invest
     raise E
-  File "D:\project\apitest\testcases\test7_invest.py", line 85, in test_invest
+  File "E:\project\apitest\testcases\test7_invest.py", line 117, in test_invest
     self.assertEqual(expected['code'], res['code'])
 AssertionError: 2 != 0
 
@@ -1372,13 +1480,13 @@ AssertionError: 2 != 0
     <pre>
     
 ft7_8: 预期结果： {'code': 2, 'msg': '数值参数格式错误'}
-实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 1199, 'member_id': 8129, 'loan_id': 4, 'amount': 400.0, 'create_time': '2020-03-03 18:04:43', 'is_valid': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 1685, 'member_id': 8129, 'loan_id': 180, 'amount': 100.0, 'create_time': '2020-03-03 23:40:01', 'is_valid': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test7_invest.py", line 95, in test_invest
+  File "E:\project\apitest\testcases\test7_invest.py", line 144, in test_invest
     raise E
-  File "D:\project\apitest\testcases\test7_invest.py", line 85, in test_invest
+  File "E:\project\apitest\testcases\test7_invest.py", line 117, in test_invest
     self.assertEqual(expected['code'], res['code'])
 AssertionError: 2 != 0
 
@@ -1410,13 +1518,13 @@ AssertionError: 2 != 0
     <pre>
     
 ft7_11: 预期结果： {'code': 2, 'msg': '数值参数格式错误'}
-实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 1200, 'member_id': 8129, 'loan_id': 4, 'amount': 400.0, 'create_time': '2020-03-03 18:04:44', 'is_valid': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 1686, 'member_id': 8129, 'loan_id': 180, 'amount': 100.0, 'create_time': '2020-03-03 23:40:02', 'is_valid': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test7_invest.py", line 95, in test_invest
+  File "E:\project\apitest\testcases\test7_invest.py", line 144, in test_invest
     raise E
-  File "D:\project\apitest\testcases\test7_invest.py", line 85, in test_invest
+  File "E:\project\apitest\testcases\test7_invest.py", line 117, in test_invest
     self.assertEqual(expected['code'], res['code'])
 AssertionError: 2 != 0
 
@@ -1436,9 +1544,32 @@ AssertionError: 2 != 0
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt7_14' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_invest_14: 投资金额大于项目剩余可投金额</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+<tr id='ft7_14' class='none'>
+    <td class='errorCase'><div class='testcase'>test_invest_14: 投资金额大于项目剩余可投金额</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft7_14' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft7_14'>错误</button>
+    <div id='div_ft7_14' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft7_14' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft7_14'>错误</button>
+    <div id='div_ft7_14' class="collapse in" align="left">
+    <pre>
+    
+ft7_14: 180
+200000.00
+700.00
+Traceback (most recent call last):
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\project\apitest\testcases\test7_invest.py", line 105, in test_invest
+    data = eval(case['data'])
+  File "&lt;string&gt;", line 1, in &lt;module&gt;
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+
+
+    </pre>
+    </div>
+    </td>
 </tr>
 
 <tr id='ft7_15' class='none'>
@@ -1452,16 +1583,19 @@ AssertionError: 2 != 0
     <div id='div_ft7_15' class="collapse in" align="left">
     <pre>
     
-ft7_15: 预期结果： {'code': 1002, 'msg': '账户余额不足'}
-实际结果： {'code': 0, 'msg': 'OK', 'data': {'id': 1201, 'member_id': 8129, 'loan_id': 4, 'amount': 6800.0, 'create_time': '2020-03-03 18:04:45', 'is_valid': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+ft7_15: 180
+200000.00
+700.00
+预期结果： {'code': 1002, 'msg': '账户余额不足'}
+实际结果： {'code': 2, 'msg': '充值金额必须大于100，并且可以被100整除', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\test7_invest.py", line 95, in test_invest
+  File "E:\project\apitest\testcases\test7_invest.py", line 144, in test_invest
     raise E
-  File "D:\project\apitest\testcases\test7_invest.py", line 85, in test_invest
+  File "E:\project\apitest\testcases\test7_invest.py", line 117, in test_invest
     self.assertEqual(expected['code'], res['code'])
-AssertionError: 1002 != 0
+AssertionError: 1002 != 2
 
 
     </pre>
@@ -1469,13 +1603,34 @@ AssertionError: 1002 != 0
     </td>
 </tr>
 
-<tr class='errorClass warning'>
-    <td>testinfo.TestInfo</td>
-    <td class="text-center">4</td>
+<tr id='pt7_16' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_16: 投资金额等于项目剩余可投金额</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt7_16' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt7_16'>通过</button>
+    <div id='div_pt7_16' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt7_16' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt7_16'>通过</button>
+    <div id='div_pt7_16' class="collapse in" align="left">
+    <pre>
+    
+pt7_16: 180
+200000.00
+700.00
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>test8_info.TestInfo</td>
+    <td class="text-center">2</td>
     <td class="text-center">2</td>
     <td class="text-center">0</td>
-    <td class="text-center">2</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c8',4)" class="detail" id='c8'>详细</a></td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c8',2)" class="detail" id='c8'>详细</a></td>
 </tr>
 
 <tr id='pt8_1' class='hiddenRow'>
@@ -1488,62 +1643,8 @@ AssertionError: 1002 != 0
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='ft8_3' class='none'>
-    <td class='errorCase'><div class='testcase'>test_info_3: 获取会员信息失败-id为字符串</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft8_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft8_3'>错误</button>
-    <div id='div_ft8_3' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft8_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft8_3'>错误</button>
-    <div id='div_ft8_3' class="collapse in" align="left">
-    <pre>
-    
-ft8_3: Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
-    return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\testinfo.py", line 54, in test_info
-    expected = eval(case['expected'])
-  File "&lt;string&gt;", line 1
-    {"code": 1005,"msg": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'}
-                                                                                                              ^
-SyntaxError: EOL while scanning string literal
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='ft8_4' class='none'>
-    <td class='errorCase'><div class='testcase'>test_info_4: 获取会员信息失败-id为小数</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft8_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft8_4'>错误</button>
-    <div id='div_ft8_4' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft8_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft8_4'>错误</button>
-    <div id='div_ft8_4' class="collapse in" align="left">
-    <pre>
-    
-ft8_4: Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
-    return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\testinfo.py", line 54, in test_info
-    expected = eval(case['expected'])
-  File "&lt;string&gt;", line 1
-    {"code": 1005,"msg": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'}
-                                                                                                              ^
-SyntaxError: EOL while scanning string literal
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
 <tr class='passClass warning'>
-    <td>testloans.TestLoans</td>
+    <td>test9_loans.TestLoans</td>
     <td class="text-center">2</td>
     <td class="text-center">2</td>
     <td class="text-center">0</td>
@@ -1594,11 +1695,11 @@ SyntaxError: EOL while scanning string literal
 ft10_3: 预期结果： OK
 实际结果： 用户昵称长度超过10位
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\testupdate.py", line 65, in test_update
+  File "E:\project\apitest\testcases\testupdate.py", line 65, in test_update
     raise E
-  File "D:\project\apitest\testcases\testupdate.py", line 51, in test_update
+  File "E:\project\apitest\testcases\testupdate.py", line 51, in test_update
     self.assertEqual(expected['code'], res['code'])
 AssertionError: 0 != 2
 
@@ -1632,11 +1733,11 @@ AssertionError: 0 != 2
 ft10_6: 预期结果： 数值参数格式错误
 实际结果： OK
 Traceback (most recent call last):
-  File "D:\project\apitest\library\ddt.py", line 149, in wrapper
+  File "E:\project\apitest\library\ddt.py", line 149, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\project\apitest\testcases\testupdate.py", line 65, in test_update
+  File "E:\project\apitest\testcases\testupdate.py", line 65, in test_update
     raise E
-  File "D:\project\apitest\testcases\testupdate.py", line 51, in test_update
+  File "E:\project\apitest\testcases\testupdate.py", line 51, in test_update
     self.assertEqual(expected['code'], res['code'])
 AssertionError: 2 != 0
 
@@ -1663,11 +1764,11 @@ AssertionError: 2 != 0
 
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>124</td>
-    <td>90</td>
-    <td>32</td>
-    <td>2</td>
-    <td>通过率：72.58%</td>
+    <td>123</td>
+    <td>86</td>
+    <td>36</td>
+    <td>1</td>
+    <td>通过率：69.92%</td>
 </tr>
 </table>
 
