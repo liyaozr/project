@@ -87,7 +87,6 @@ class TestInvest(unittest.TestCase):
             if case['check_sql'] == 1:
                 self.assertEqual(Decimal(str(data['amount'])), Decimal(str(res['data']['amount'])))
         except AssertionError as E:
-            print(case['check_sql'])
             print('预期结果：', expected)
             print('实际结果：', res)
             self.excel.write_data(row=row, column=8, value='不通过')

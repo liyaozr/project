@@ -75,7 +75,7 @@ class TestAudit(unittest.TestCase):
             status = self.db.find_one(sql)['status']
             # 保存审核通过的项目id
             if status == 2:
-                CaseData.pass_loan_id = str(jsonpath.jsonpath(self.add_res, "$..id")[0])
+                CaseData.pass_loan_id = str(data['loan_id'])
         # 对预期结果和相应结果进行断言
         try:
             self.assertEqual(expected['code'], res['code'])

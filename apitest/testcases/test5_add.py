@@ -62,7 +62,7 @@ class TestAdd(unittest.TestCase):
         # 获取结果
         response = self.request.send(url=url, method=method, headers=headers, json=data)
         res = response.json()
-        # 对预期结果和相应结果进行断言
+        # 对预期结果和响应结果进行断言
         try:
             self.assertEqual(expected['code'], res['code'])
             self.assertEqual(expected['msg'], res['msg'])
@@ -73,8 +73,8 @@ class TestAdd(unittest.TestCase):
                 end_res = self.db.find_one(sql)['count(member_id)']
                 self.assertEqual(end_res - start_res, 1)
         except AssertionError as E:
-            print('预期结果：',expected)
-            print('实际结果：',res)
+            print('预期结果：', expected)
+            print('实际结果：', res)
             self.excel.write_data(row=row, column=8, value='不通过')
             log.error('{}用例不通过'.format(case['title']))
             log.exception(E)

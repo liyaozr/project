@@ -16,44 +16,65 @@ import random
 
 
 def file_copy(file_path):
+    print(file_path)
+    # 如果给的路径是文件路径，读取它的目录
+    if os.path.isfile(file_path):
+        file_path = os.path.dirname(file_path)
     try:
         dir_list = os.listdir(file_path)
-        new_dir = os.path.dirname(__file__)
+        print(dir_list)
     except:
         print('目录路径有误或者不存在')
     else:
+        new_dir = os.path.dirname(__file__)
         for item in dir_list:
             item_dir = os.path.join(file_path + '/' + item)
-            with open(item_dir, 'r', encoding='utf8') as f1:
-                content = f1.read()
-                new_item_dir = os.path.join(new_dir + '/' + item)
-                with open(new_item_dir, 'w', encoding='utf8') as f2:
-                    f2.write(content)
+            # 判断item是不是文件
+            if os.path.isfile(item_dir):
+                with open(item_dir, 'r', encoding='utf8') as f1:
+                    content = f1.read()
+                    new_item_dir = os.path.join(new_dir + '/' + item)
+                    with open(new_item_dir, 'w', encoding='utf8') as f2:
+                        f2.write(content)
+            else:
+                # 本来想创建文件夹，然后再复制，没想好怎么写
+                file_copy(item_dir)
 
 
-file_copy('user_list.txt')
+# 如果输入的路径是文件名
+# file_copy(r'E:\project\day5\01集合的定义.py')
+# 如果输入的路径是目录
+file_copy(r'txt')
+
 '''
 2、改善上节课扩展作业的注册程序，打开文件的读取数据的时候，如果文件不存在会报错，请通过try-except来捕获这个错误，进行处理，让注册程序可以继续运行。
 '''
 
 
+# 密码确认
+def pwd_confirm(user, user_list):
+    while True:
+        pwd1 = input('请输入密码：')
+        pwd2 = input('请再次输入密码：')
+        if pwd1 == pwd2:
+            user_list.append({'user': user, 'pwd': pwd1})
+            print('注册成功')
+            break
+        else:
+            print('两次输入的密码不一致，请重新输入')
+
+
 def register():
     try:
+        # 文件存在走这里
         with open('user_list.txt', 'r+', encoding='utf8') as f3:
             user_list = eval(f3.read())
     except:
+        # 文件不存在走这里
         with open('user_list.txt', 'w+', encoding='utf8') as f3:
             user_list = []
             user = input('请输入用户名：')
-            while True:
-                pwd1 = input('请输入密码：')
-                pwd2 = input('请再次输入密码：')
-                if pwd1 == pwd2:
-                    user_list.append({'user': user, 'pwd': pwd1})
-                    print('注册成功')
-                    break
-                else:
-                    print('两次输入的密码不一致，请重新输入')
+            pwd_confirm(user, user_list)
             user_list = str(user_list)
             f3.write(user_list)
     else:
@@ -64,15 +85,7 @@ def register():
                     print('该用户名已被注册，请重新输入')
                     break
             else:
-                while True:
-                    pwd1 = input('请输入密码：')
-                    pwd2 = input('请再次输入密码：')
-                    if pwd1 == pwd2:
-                        user_list.append({'user': user, 'pwd': pwd1})
-                        print('注册成功')
-                        break
-                    else:
-                        print('两次输入的密码不一致，请重新输入')
+                pwd_confirm(user, user_list)
                 break
         user_list = str(user_list)
         with open('user_list.txt', 'w', encoding='utf8') as f3:
@@ -80,6 +93,7 @@ def register():
 
 
 # register()
+
 '''
 3、优化之前作业的石头剪刀布游戏，用户输入时，如果输入非数字会引发异常，请通过异常捕获来处理这个问题。
 '''
