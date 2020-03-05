@@ -17,6 +17,7 @@ from common.handlerequest import SendRequest
 from common.connectdb import DB
 from decimal import Decimal
 from common.handledata import CaseData, replace_data
+from common.handle_sign import HandleSign
 
 case_file = os.path.join(DATADIR, 'apicases.xlsx')
 
@@ -36,13 +37,15 @@ class TestWithdraw(unittest.TestCase):
         }
         url = conf.get('env', 'url') + '/member/login'
         method = 'post'
-        headers = eval(conf.get('env', 'headers'))
+        headers = {"X-Lemonban-Media-Type": "lemonban.v3"}
         response = cls.request.send(url=url, method=method, headers=headers, json=data)
         res = response.json()
         token = jsonpath.jsonpath(res, "$..token")[0]
+        # CaseData.token = token
         token_type = jsonpath.jsonpath(res, "$..token_type")[0]
         CaseData.token_value = token_type + " " + token
         CaseData.member_id = str(jsonpath.jsonpath(res, "$..id")[0])
+        CaseData.sign = HandleSign.generate_sign(token)
 
     @data(*datas)
     def test_withdaw(self, case):
@@ -55,6 +58,8 @@ class TestWithdraw(unittest.TestCase):
         # 替换测试数据
         case['data'] = replace_data(case['data'])
         data = eval(case['data'])
+        data.update(CaseData.sign)
+        print(data)
         expected = eval(case['expected'])
         row = case['case_id'] + 1
         # 发送请求之前,获取用余额

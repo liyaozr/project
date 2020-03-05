@@ -7599,3 +7599,1594 @@ Traceback (most recent call last):
   File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 832, in _baseAssertEqual
     raise self.failureException(msg)
 AssertionError: 2 != 0
+2020-03-04 09:17:16,810 - [test1_login.py-->line:51]- INFO: 用例：登录成功，执行未通过
+2020-03-04 09:17:16,930 - [test1_login.py-->line:46]- ERROR: 手机号为空用例不通过
+2020-03-04 09:17:16,930 - [test1_login.py-->line:47]- ERROR: 1 != 2
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test1_login.py", line 40, in test_login
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+2020-03-04 09:17:17,102 - [test1_login.py-->line:46]- ERROR: 密码为空用例不通过
+2020-03-04 09:17:17,102 - [test1_login.py-->line:47]- ERROR: 1 != 2
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test1_login.py", line 40, in test_login
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+2020-03-04 09:17:17,243 - [test1_login.py-->line:51]- INFO: 用例：手机号未注册，执行未通过
+2020-03-04 09:17:17,371 - [test1_login.py-->line:51]- INFO: 用例：密码错误，执行未通过
+2020-03-04 09:17:17,491 - [test1_login.py-->line:51]- INFO: 用例：手机号格式错误，执行未通过
+2020-03-04 09:17:21,958 - [test3_recharge.py-->line:85]- ERROR: 会员id为字符串用例不通过
+2020-03-04 09:17:21,958 - [test3_recharge.py-->line:86]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test3_recharge.py", line 72, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:17:22,226 - [test3_recharge.py-->line:85]- ERROR: 充值金额为0用例不通过
+2020-03-04 09:17:22,236 - [test3_recharge.py-->line:86]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test3_recharge.py", line 72, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:17:22,376 - [test3_recharge.py-->line:85]- ERROR: 充值金额为负数用例不通过
+2020-03-04 09:17:22,376 - [test3_recharge.py-->line:86]- ERROR: '充值金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 充值金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于500000
+? ^
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test3_recharge.py", line 73, in test_recharge
+    self.assertEqual(expected['msg'], res['msg'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '充值金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 充值金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于500000
+? ^
+
+2020-03-04 09:17:22,496 - [test3_recharge.py-->line:85]- ERROR: 充值金额为空用例不通过
+2020-03-04 09:17:22,496 - [test3_recharge.py-->line:86]- ERROR: 1 != 2
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test3_recharge.py", line 72, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+2020-03-04 09:17:22,735 - [test3_recharge.py-->line:85]- ERROR: 充值金额-大于50万用例不通过
+2020-03-04 09:17:22,735 - [test3_recharge.py-->line:86]- ERROR: '充值金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 充值金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于500000
+? ^
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test3_recharge.py", line 73, in test_recharge
+    self.assertEqual(expected['msg'], res['msg'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '充值金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 充值金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于500000
+? ^
+
+2020-03-04 09:17:24,015 - [test4_withdraw.py-->line:84]- ERROR: 提现成功-50万用例不通过
+2020-03-04 09:17:24,015 - [test4_withdraw.py-->line:85]- ERROR: 0 != 1002
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test4_withdraw.py", line 71, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 1002
+2020-03-04 09:17:24,253 - [test4_withdraw.py-->line:84]- ERROR: id不是当前登录的用户用例不通过
+2020-03-04 09:17:24,253 - [test4_withdraw.py-->line:85]- ERROR: 1007 != 1002
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test4_withdraw.py", line 71, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1007 != 1002
+2020-03-04 09:17:24,383 - [test4_withdraw.py-->line:84]- ERROR: 会员id为字符串用例不通过
+2020-03-04 09:17:24,383 - [test4_withdraw.py-->line:85]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test4_withdraw.py", line 71, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:17:24,634 - [test4_withdraw.py-->line:84]- ERROR: 提现金额为0用例不通过
+2020-03-04 09:17:24,634 - [test4_withdraw.py-->line:85]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test4_withdraw.py", line 71, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:17:24,754 - [test4_withdraw.py-->line:84]- ERROR: 提现金额为负数用例不通过
+2020-03-04 09:17:24,754 - [test4_withdraw.py-->line:85]- ERROR: '提现金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 提现金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于5000000
+? ^                    +
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test4_withdraw.py", line 72, in test_withdaw
+    self.assertEqual(expected['msg'], res['msg'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '提现金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 提现金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于5000000
+? ^                    +
+
+2020-03-04 09:17:24,864 - [test4_withdraw.py-->line:84]- ERROR: 提现金额为空用例不通过
+2020-03-04 09:17:24,864 - [test4_withdraw.py-->line:85]- ERROR: '提现金额为空' != '余额为空'
+- 提现金额为空
++ 余额为空
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test4_withdraw.py", line 72, in test_withdaw
+    self.assertEqual(expected['msg'], res['msg'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '提现金额为空' != '余额为空'
+- 提现金额为空
++ 余额为空
+
+2020-03-04 09:17:25,124 - [test4_withdraw.py-->line:84]- ERROR: 提现金额-大于50万用例不通过
+2020-03-04 09:17:25,124 - [test4_withdraw.py-->line:85]- ERROR: '提现金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 提现金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于5000000
+? ^                    +
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test4_withdraw.py", line 72, in test_withdaw
+    self.assertEqual(expected['msg'], res['msg'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '提现金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 提现金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于5000000
+? ^                    +
+
+2020-03-04 09:17:27,017 - [test5_add.py-->line:79]- ERROR: 会员id为字符串用例不通过
+2020-03-04 09:17:27,017 - [test5_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:17:27,167 - [test5_add.py-->line:79]- ERROR: 会员id为小数用例不通过
+2020-03-04 09:17:27,167 - [test5_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:17:27,444 - [test5_add.py-->line:79]- ERROR: 标题为空格用例不通过
+2020-03-04 09:17:27,444 - [test5_add.py-->line:80]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-04 09:17:27,575 - [test5_add.py-->line:79]- ERROR: 借款金额为整数用例不通过
+2020-03-04 09:17:27,575 - [test5_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:17:27,698 - [test5_add.py-->line:79]- ERROR: 借款金额为字符串用例不通过
+2020-03-04 09:17:27,698 - [test5_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:17:28,179 - [test5_add.py-->line:79]- ERROR: 年利率为整数用例不通过
+2020-03-04 09:17:28,179 - [test5_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:17:28,299 - [test5_add.py-->line:79]- ERROR: 年利率为字符串用例不通过
+2020-03-04 09:17:28,299 - [test5_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:17:29,791 - [test5_add.py-->line:79]- ERROR: 借款期限为字符串用例不通过
+2020-03-04 09:17:29,791 - [test5_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:17:29,921 - [test5_add.py-->line:79]- ERROR: 借款期限为小数用例不通过
+2020-03-04 09:17:29,921 - [test5_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:17:30,408 - [test5_add.py-->line:79]- ERROR: 借款类型为小数用例不通过
+2020-03-04 09:17:30,408 - [test5_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:17:30,528 - [test5_add.py-->line:79]- ERROR: 借款类型为字符串用例不通过
+2020-03-04 09:17:30,528 - [test5_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:17:30,799 - [test5_add.py-->line:79]- ERROR: 竞标天数为小数用例不通过
+2020-03-04 09:17:30,799 - [test5_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:17:30,919 - [test5_add.py-->line:79]- ERROR: 竞标天数为字符串用例不通过
+2020-03-04 09:17:30,919 - [test5_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:17:34,692 - [test7_invest.py-->line:142]- ERROR: 会员id为字符串用例不通过
+2020-03-04 09:17:34,692 - [test7_invest.py-->line:143]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test7_invest.py", line 117, in test_invest
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:17:35,972 - [test7_invest.py-->line:142]- ERROR: 标id为字符串用例不通过
+2020-03-04 09:17:35,972 - [test7_invest.py-->line:143]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test7_invest.py", line 117, in test_invest
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:17:36,861 - [test7_invest.py-->line:142]- ERROR: 投资金额为字符串用例不通过
+2020-03-04 09:17:36,861 - [test7_invest.py-->line:143]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test7_invest.py", line 117, in test_invest
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:17:38,624 - [test7_invest.py-->line:142]- ERROR: 投资金额大于用户余额用例不通过
+2020-03-04 09:17:38,624 - [test7_invest.py-->line:143]- ERROR: 1002 != 2
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test7_invest.py", line 117, in test_invest
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1002 != 2
+2020-03-04 09:17:40,328 - [testupdate.py-->line:63]- ERROR: 更新成功-昵称10位用例不通过
+2020-03-04 09:17:40,328 - [testupdate.py-->line:64]- ERROR: 0 != 2
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\testupdate.py", line 51, in test_update
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 2
+2020-03-04 09:17:40,706 - [testupdate.py-->line:63]- ERROR: 更新失败-会员id为字符串用例不通过
+2020-03-04 09:17:40,706 - [testupdate.py-->line:64]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\testupdate.py", line 51, in test_update
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:27:28,233 - [test1_login.py-->line:51]- INFO: 用例：登录成功，执行未通过
+2020-03-04 09:27:28,353 - [test1_login.py-->line:46]- ERROR: 手机号为空用例不通过
+2020-03-04 09:27:28,353 - [test1_login.py-->line:47]- ERROR: 1 != 2
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test1_login.py", line 40, in test_login
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+2020-03-04 09:27:28,473 - [test1_login.py-->line:46]- ERROR: 密码为空用例不通过
+2020-03-04 09:27:28,473 - [test1_login.py-->line:47]- ERROR: 1 != 2
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test1_login.py", line 40, in test_login
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+2020-03-04 09:27:28,613 - [test1_login.py-->line:51]- INFO: 用例：手机号未注册，执行未通过
+2020-03-04 09:27:28,753 - [test1_login.py-->line:51]- INFO: 用例：密码错误，执行未通过
+2020-03-04 09:27:28,874 - [test1_login.py-->line:51]- INFO: 用例：手机号格式错误，执行未通过
+2020-03-04 09:27:33,329 - [test3_recharge.py-->line:85]- ERROR: 会员id为字符串用例不通过
+2020-03-04 09:27:33,329 - [test3_recharge.py-->line:86]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test3_recharge.py", line 72, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:27:33,598 - [test3_recharge.py-->line:85]- ERROR: 充值金额为0用例不通过
+2020-03-04 09:27:33,598 - [test3_recharge.py-->line:86]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test3_recharge.py", line 72, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:27:33,718 - [test3_recharge.py-->line:85]- ERROR: 充值金额为负数用例不通过
+2020-03-04 09:27:33,718 - [test3_recharge.py-->line:86]- ERROR: '充值金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 充值金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于500000
+? ^
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test3_recharge.py", line 73, in test_recharge
+    self.assertEqual(expected['msg'], res['msg'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '充值金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 充值金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于500000
+? ^
+
+2020-03-04 09:27:33,828 - [test3_recharge.py-->line:85]- ERROR: 充值金额为空用例不通过
+2020-03-04 09:27:33,828 - [test3_recharge.py-->line:86]- ERROR: 1 != 2
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test3_recharge.py", line 72, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+2020-03-04 09:27:34,089 - [test3_recharge.py-->line:85]- ERROR: 充值金额-大于50万用例不通过
+2020-03-04 09:27:34,089 - [test3_recharge.py-->line:86]- ERROR: '充值金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 充值金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于500000
+? ^
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test3_recharge.py", line 73, in test_recharge
+    self.assertEqual(expected['msg'], res['msg'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '充值金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 充值金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于500000
+? ^
+
+2020-03-04 09:27:35,649 - [test4_withdraw.py-->line:84]- ERROR: id不是当前登录的用户用例不通过
+2020-03-04 09:27:35,649 - [test4_withdraw.py-->line:85]- ERROR: 1007 != 1002
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test4_withdraw.py", line 71, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1007 != 1002
+2020-03-04 09:27:35,779 - [test4_withdraw.py-->line:84]- ERROR: 会员id为字符串用例不通过
+2020-03-04 09:27:35,779 - [test4_withdraw.py-->line:85]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test4_withdraw.py", line 71, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:27:36,029 - [test4_withdraw.py-->line:84]- ERROR: 提现金额为0用例不通过
+2020-03-04 09:27:36,029 - [test4_withdraw.py-->line:85]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test4_withdraw.py", line 71, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:27:36,149 - [test4_withdraw.py-->line:84]- ERROR: 提现金额为负数用例不通过
+2020-03-04 09:27:36,149 - [test4_withdraw.py-->line:85]- ERROR: '提现金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 提现金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于5000000
+? ^                    +
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test4_withdraw.py", line 72, in test_withdaw
+    self.assertEqual(expected['msg'], res['msg'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '提现金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 提现金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于5000000
+? ^                    +
+
+2020-03-04 09:27:36,261 - [test4_withdraw.py-->line:84]- ERROR: 提现金额为空用例不通过
+2020-03-04 09:27:36,261 - [test4_withdraw.py-->line:85]- ERROR: '提现金额为空' != '余额为空'
+- 提现金额为空
++ 余额为空
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test4_withdraw.py", line 72, in test_withdaw
+    self.assertEqual(expected['msg'], res['msg'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '提现金额为空' != '余额为空'
+- 提现金额为空
++ 余额为空
+
+2020-03-04 09:27:36,522 - [test4_withdraw.py-->line:84]- ERROR: 提现金额-大于50万用例不通过
+2020-03-04 09:27:36,522 - [test4_withdraw.py-->line:85]- ERROR: '提现金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 提现金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于5000000
+? ^                    +
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test4_withdraw.py", line 72, in test_withdaw
+    self.assertEqual(expected['msg'], res['msg'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '提现金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 提现金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于5000000
+? ^                    +
+
+2020-03-04 09:27:38,409 - [test5_add.py-->line:79]- ERROR: 会员id为字符串用例不通过
+2020-03-04 09:27:38,409 - [test5_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:27:38,529 - [test5_add.py-->line:79]- ERROR: 会员id为小数用例不通过
+2020-03-04 09:27:38,529 - [test5_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:27:38,809 - [test5_add.py-->line:79]- ERROR: 标题为空格用例不通过
+2020-03-04 09:27:38,809 - [test5_add.py-->line:80]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-04 09:27:38,932 - [test5_add.py-->line:79]- ERROR: 借款金额为整数用例不通过
+2020-03-04 09:27:38,932 - [test5_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:27:39,062 - [test5_add.py-->line:79]- ERROR: 借款金额为字符串用例不通过
+2020-03-04 09:27:39,062 - [test5_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:27:39,563 - [test5_add.py-->line:79]- ERROR: 年利率为整数用例不通过
+2020-03-04 09:27:39,563 - [test5_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:27:39,683 - [test5_add.py-->line:79]- ERROR: 年利率为字符串用例不通过
+2020-03-04 09:27:39,683 - [test5_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:27:41,202 - [test5_add.py-->line:79]- ERROR: 借款期限为字符串用例不通过
+2020-03-04 09:27:41,202 - [test5_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:27:41,332 - [test5_add.py-->line:79]- ERROR: 借款期限为小数用例不通过
+2020-03-04 09:27:41,332 - [test5_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:27:41,810 - [test5_add.py-->line:79]- ERROR: 借款类型为小数用例不通过
+2020-03-04 09:27:41,810 - [test5_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:27:41,930 - [test5_add.py-->line:79]- ERROR: 借款类型为字符串用例不通过
+2020-03-04 09:27:41,930 - [test5_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:27:42,221 - [test5_add.py-->line:79]- ERROR: 竞标天数为小数用例不通过
+2020-03-04 09:27:42,221 - [test5_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:27:42,341 - [test5_add.py-->line:79]- ERROR: 竞标天数为字符串用例不通过
+2020-03-04 09:27:42,341 - [test5_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test5_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:27:46,317 - [test7_invest.py-->line:138]- ERROR: 会员id为字符串用例不通过
+2020-03-04 09:27:46,317 - [test7_invest.py-->line:139]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test7_invest.py", line 113, in test_invest
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:27:47,561 - [test7_invest.py-->line:138]- ERROR: 标id为字符串用例不通过
+2020-03-04 09:27:47,561 - [test7_invest.py-->line:139]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test7_invest.py", line 113, in test_invest
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:27:50,906 - [test7_invest.py-->line:138]- ERROR: 投资金额为字符串用例不通过
+2020-03-04 09:27:50,906 - [test7_invest.py-->line:139]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test7_invest.py", line 113, in test_invest
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-04 09:27:54,044 - [testupdate.py-->line:63]- ERROR: 更新成功-昵称10位用例不通过
+2020-03-04 09:27:54,044 - [testupdate.py-->line:64]- ERROR: 0 != 2
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\testupdate.py", line 51, in test_update
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 2
+2020-03-04 09:27:54,413 - [testupdate.py-->line:63]- ERROR: 更新失败-会员id为字符串用例不通过
+2020-03-04 09:27:54,413 - [testupdate.py-->line:64]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\testupdate.py", line 51, in test_update
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:10:47,651 - [test01_login.py-->line:51]- INFO: 用例：登录成功，执行未通过
+2020-03-05 14:10:47,792 - [test01_login.py-->line:46]- ERROR: 手机号为空用例不通过
+2020-03-05 14:10:47,792 - [test01_login.py-->line:47]- ERROR: 1 != 2
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test01_login.py", line 40, in test_login
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+2020-03-05 14:10:47,922 - [test01_login.py-->line:46]- ERROR: 密码为空用例不通过
+2020-03-05 14:10:47,922 - [test01_login.py-->line:47]- ERROR: 1 != 2
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test01_login.py", line 40, in test_login
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+2020-03-05 14:10:48,050 - [test01_login.py-->line:51]- INFO: 用例：手机号未注册，执行未通过
+2020-03-05 14:10:48,181 - [test01_login.py-->line:51]- INFO: 用例：密码错误，执行未通过
+2020-03-05 14:10:48,311 - [test01_login.py-->line:51]- INFO: 用例：手机号格式错误，执行未通过
+2020-03-05 14:10:52,991 - [test03_recharge.py-->line:85]- ERROR: 会员id为字符串用例不通过
+2020-03-05 14:10:52,991 - [test03_recharge.py-->line:86]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test03_recharge.py", line 72, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:10:53,229 - [test03_recharge.py-->line:85]- ERROR: 充值金额为0用例不通过
+2020-03-05 14:10:53,229 - [test03_recharge.py-->line:86]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test03_recharge.py", line 72, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:10:53,347 - [test03_recharge.py-->line:85]- ERROR: 充值金额为负数用例不通过
+2020-03-05 14:10:53,347 - [test03_recharge.py-->line:86]- ERROR: '充值金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 充值金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于500000
+? ^
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test03_recharge.py", line 73, in test_recharge
+    self.assertEqual(expected['msg'], res['msg'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '充值金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 充值金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于500000
+? ^
+
+2020-03-05 14:10:53,467 - [test03_recharge.py-->line:85]- ERROR: 充值金额为空用例不通过
+2020-03-05 14:10:53,467 - [test03_recharge.py-->line:86]- ERROR: 1 != 2
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test03_recharge.py", line 72, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+2020-03-05 14:10:53,757 - [test03_recharge.py-->line:85]- ERROR: 充值金额-大于50万用例不通过
+2020-03-05 14:10:53,757 - [test03_recharge.py-->line:86]- ERROR: '充值金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 充值金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于500000
+? ^
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test03_recharge.py", line 73, in test_recharge
+    self.assertEqual(expected['msg'], res['msg'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '充值金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 充值金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于500000
+? ^
+
+2020-03-05 14:10:54,168 - [test04_withdraw.py-->line:89]- ERROR: 提现成功-整数用例不通过
+2020-03-05 14:10:54,168 - [test04_withdraw.py-->line:90]- ERROR: 0 != 1004
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test04_withdraw.py", line 76, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 1004
+2020-03-05 14:10:54,357 - [test04_withdraw.py-->line:89]- ERROR: 提现成功-1位小数用例不通过
+2020-03-05 14:10:54,357 - [test04_withdraw.py-->line:90]- ERROR: 0 != 1004
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test04_withdraw.py", line 76, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 1004
+2020-03-05 14:10:54,555 - [test04_withdraw.py-->line:89]- ERROR: 提现成功-2位小数用例不通过
+2020-03-05 14:10:54,555 - [test04_withdraw.py-->line:90]- ERROR: 0 != 1004
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test04_withdraw.py", line 76, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 1004
+2020-03-05 14:10:54,756 - [test04_withdraw.py-->line:89]- ERROR: 提现成功-50万用例不通过
+2020-03-05 14:10:54,756 - [test04_withdraw.py-->line:90]- ERROR: 0 != 1004
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test04_withdraw.py", line 76, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 1004
+2020-03-05 14:10:54,873 - [test04_withdraw.py-->line:89]- ERROR: 会员id为空用例不通过
+2020-03-05 14:10:54,873 - [test04_withdraw.py-->line:90]- ERROR: 1 != 1004
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test04_withdraw.py", line 76, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 1004
+2020-03-05 14:10:55,003 - [test04_withdraw.py-->line:89]- ERROR: id不是当前登录的用户用例不通过
+2020-03-05 14:10:55,003 - [test04_withdraw.py-->line:90]- ERROR: 1007 != 1004
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test04_withdraw.py", line 76, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1007 != 1004
+2020-03-05 14:10:55,135 - [test04_withdraw.py-->line:89]- ERROR: 会员id为字符串用例不通过
+2020-03-05 14:10:55,135 - [test04_withdraw.py-->line:90]- ERROR: 2 != 1004
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test04_withdraw.py", line 76, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 1004
+2020-03-05 14:10:55,255 - [test04_withdraw.py-->line:89]- ERROR: 会员id为小数用例不通过
+2020-03-05 14:10:55,255 - [test04_withdraw.py-->line:90]- ERROR: 2 != 1004
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test04_withdraw.py", line 76, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 1004
+2020-03-05 14:10:55,375 - [test04_withdraw.py-->line:89]- ERROR: 提现金额为0用例不通过
+2020-03-05 14:10:55,375 - [test04_withdraw.py-->line:90]- ERROR: 2 != 1004
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test04_withdraw.py", line 76, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 1004
+2020-03-05 14:10:55,525 - [test04_withdraw.py-->line:89]- ERROR: 提现金额为负数用例不通过
+2020-03-05 14:10:55,525 - [test04_withdraw.py-->line:90]- ERROR: 2 != 1004
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test04_withdraw.py", line 76, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 1004
+2020-03-05 14:10:55,645 - [test04_withdraw.py-->line:89]- ERROR: 提现金额为空用例不通过
+2020-03-05 14:10:55,645 - [test04_withdraw.py-->line:90]- ERROR: 1 != 1004
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test04_withdraw.py", line 76, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 1004
+2020-03-05 14:10:55,767 - [test04_withdraw.py-->line:89]- ERROR: 提现金额-3位小数用例不通过
+2020-03-05 14:10:55,767 - [test04_withdraw.py-->line:90]- ERROR: 2 != 1004
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test04_withdraw.py", line 76, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 1004
+2020-03-05 14:10:55,897 - [test04_withdraw.py-->line:89]- ERROR: 提现金额-大于50万用例不通过
+2020-03-05 14:10:55,897 - [test04_withdraw.py-->line:90]- ERROR: 2 != 1004
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test04_withdraw.py", line 76, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 1004
+2020-03-05 14:10:56,018 - [test04_withdraw.py-->line:89]- ERROR: 提现金额-非数字用例不通过
+2020-03-05 14:10:56,018 - [test04_withdraw.py-->line:90]- ERROR: 2 != 1004
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test04_withdraw.py", line 76, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 1004
+2020-03-05 14:10:57,843 - [test05_add.py-->line:79]- ERROR: 会员id为字符串用例不通过
+2020-03-05 14:10:57,843 - [test05_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:10:57,963 - [test05_add.py-->line:79]- ERROR: 会员id为小数用例不通过
+2020-03-05 14:10:57,963 - [test05_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:10:58,233 - [test05_add.py-->line:79]- ERROR: 标题为空格用例不通过
+2020-03-05 14:10:58,233 - [test05_add.py-->line:80]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-05 14:10:58,363 - [test05_add.py-->line:79]- ERROR: 借款金额为整数用例不通过
+2020-03-05 14:10:58,363 - [test05_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:10:58,702 - [test05_add.py-->line:79]- ERROR: 借款金额为字符串用例不通过
+2020-03-05 14:10:58,702 - [test05_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:10:59,202 - [test05_add.py-->line:79]- ERROR: 年利率为整数用例不通过
+2020-03-05 14:10:59,202 - [test05_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:10:59,332 - [test05_add.py-->line:79]- ERROR: 年利率为字符串用例不通过
+2020-03-05 14:10:59,332 - [test05_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:11:00,870 - [test05_add.py-->line:79]- ERROR: 借款期限为字符串用例不通过
+2020-03-05 14:11:00,870 - [test05_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:11:01,000 - [test05_add.py-->line:79]- ERROR: 借款期限为小数用例不通过
+2020-03-05 14:11:01,000 - [test05_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:11:01,533 - [test05_add.py-->line:79]- ERROR: 借款类型为小数用例不通过
+2020-03-05 14:11:01,533 - [test05_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:11:01,662 - [test05_add.py-->line:79]- ERROR: 借款类型为字符串用例不通过
+2020-03-05 14:11:01,662 - [test05_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:11:01,911 - [test05_add.py-->line:79]- ERROR: 竞标天数为小数用例不通过
+2020-03-05 14:11:01,911 - [test05_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:11:02,041 - [test05_add.py-->line:79]- ERROR: 竞标天数为字符串用例不通过
+2020-03-05 14:11:02,041 - [test05_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:11:05,799 - [test07_invest.py-->line:135]- ERROR: 会员id为字符串用例不通过
+2020-03-05 14:11:05,799 - [test07_invest.py-->line:136]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test07_invest.py", line 110, in test_invest
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:11:07,774 - [test07_invest.py-->line:135]- ERROR: 标id为字符串用例不通过
+2020-03-05 14:11:07,774 - [test07_invest.py-->line:136]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test07_invest.py", line 110, in test_invest
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:11:08,974 - [test07_invest.py-->line:135]- ERROR: 投资金额为字符串用例不通过
+2020-03-05 14:11:08,974 - [test07_invest.py-->line:136]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test07_invest.py", line 110, in test_invest
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:11:12,486 - [test10_update.py-->line:65]- ERROR: 更新成功-昵称10位用例不通过
+2020-03-05 14:11:12,486 - [test10_update.py-->line:66]- ERROR: 0 != 2
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test10_update.py", line 53, in test_update
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 2
+2020-03-05 14:11:12,847 - [test10_update.py-->line:65]- ERROR: 更新失败-会员id为字符串用例不通过
+2020-03-05 14:11:12,847 - [test10_update.py-->line:66]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test10_update.py", line 53, in test_update
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:11:13,530 - [test_mainflow.py-->line:53]- ERROR: 管理员登录用例不通过
+2020-03-05 14:11:13,530 - [test_mainflow.py-->line:54]- ERROR: 0 != 1001
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test_mainflow.py", line 47, in test_mainflow
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 1001
+2020-03-05 14:11:13,733 - [test_mainflow.py-->line:53]- ERROR: 管理员加标用例不通过
+2020-03-05 14:11:13,733 - [test_mainflow.py-->line:54]- ERROR: 0 != 1003
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test_mainflow.py", line 47, in test_mainflow
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 1003
+2020-03-05 14:11:13,920 - [test_mainflow.py-->line:53]- ERROR: 管理员审核用例不通过
+2020-03-05 14:11:13,920 - [test_mainflow.py-->line:54]- ERROR: 0 != 1003
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test_mainflow.py", line 47, in test_mainflow
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 1003
+2020-03-05 14:11:14,121 - [test_mainflow.py-->line:53]- ERROR: 普通用户注册用例不通过
+2020-03-05 14:11:14,121 - [test_mainflow.py-->line:54]- ERROR: 0 != 2
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test_mainflow.py", line 47, in test_mainflow
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 2
+2020-03-05 14:11:14,311 - [test_mainflow.py-->line:53]- ERROR: 普通用户登录用例不通过
+2020-03-05 14:11:14,311 - [test_mainflow.py-->line:54]- ERROR: 0 != 1001
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test_mainflow.py", line 47, in test_mainflow
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 1001
+2020-03-05 14:11:14,499 - [test_mainflow.py-->line:53]- ERROR: 更新成功用例不通过
+2020-03-05 14:11:14,499 - [test_mainflow.py-->line:54]- ERROR: 0 != 1003
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test_mainflow.py", line 47, in test_mainflow
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 1003
+2020-03-05 14:11:14,691 - [test_mainflow.py-->line:53]- ERROR: 普通用户充值用例不通过
+2020-03-05 14:11:14,691 - [test_mainflow.py-->line:54]- ERROR: 0 != 1003
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test_mainflow.py", line 47, in test_mainflow
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 1003
+2020-03-05 14:11:14,901 - [test_mainflow.py-->line:53]- ERROR: 普通用户投资用例不通过
+2020-03-05 14:11:14,901 - [test_mainflow.py-->line:54]- ERROR: 0 != 1003
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test_mainflow.py", line 47, in test_mainflow
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 1003
+2020-03-05 14:11:15,190 - [test_mainflow.py-->line:53]- ERROR: 提现成功-整数用例不通过
+2020-03-05 14:11:15,190 - [test_mainflow.py-->line:54]- ERROR: 0 != 1003
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test_mainflow.py", line 47, in test_mainflow
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 1003
+2020-03-05 14:14:21,594 - [test01_login.py-->line:51]- INFO: 用例：登录成功，执行未通过
+2020-03-05 14:14:21,724 - [test01_login.py-->line:46]- ERROR: 手机号为空用例不通过
+2020-03-05 14:14:21,724 - [test01_login.py-->line:47]- ERROR: 1 != 2
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test01_login.py", line 40, in test_login
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+2020-03-05 14:14:21,875 - [test01_login.py-->line:46]- ERROR: 密码为空用例不通过
+2020-03-05 14:14:21,875 - [test01_login.py-->line:47]- ERROR: 1 != 2
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test01_login.py", line 40, in test_login
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+2020-03-05 14:14:22,005 - [test01_login.py-->line:51]- INFO: 用例：手机号未注册，执行未通过
+2020-03-05 14:14:22,135 - [test01_login.py-->line:51]- INFO: 用例：密码错误，执行未通过
+2020-03-05 14:14:22,265 - [test01_login.py-->line:51]- INFO: 用例：手机号格式错误，执行未通过
+2020-03-05 14:14:26,629 - [test03_recharge.py-->line:85]- ERROR: 会员id为字符串用例不通过
+2020-03-05 14:14:26,629 - [test03_recharge.py-->line:86]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test03_recharge.py", line 72, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:14:26,879 - [test03_recharge.py-->line:85]- ERROR: 充值金额为0用例不通过
+2020-03-05 14:14:26,879 - [test03_recharge.py-->line:86]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test03_recharge.py", line 72, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:14:26,999 - [test03_recharge.py-->line:85]- ERROR: 充值金额为负数用例不通过
+2020-03-05 14:14:26,999 - [test03_recharge.py-->line:86]- ERROR: '充值金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 充值金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于500000
+? ^
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test03_recharge.py", line 73, in test_recharge
+    self.assertEqual(expected['msg'], res['msg'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '充值金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 充值金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于500000
+? ^
+
+2020-03-05 14:14:27,111 - [test03_recharge.py-->line:85]- ERROR: 充值金额为空用例不通过
+2020-03-05 14:14:27,111 - [test03_recharge.py-->line:86]- ERROR: 1 != 2
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test03_recharge.py", line 72, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+2020-03-05 14:14:27,382 - [test03_recharge.py-->line:85]- ERROR: 充值金额-大于50万用例不通过
+2020-03-05 14:14:27,382 - [test03_recharge.py-->line:86]- ERROR: '充值金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 充值金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于500000
+? ^
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test03_recharge.py", line 73, in test_recharge
+    self.assertEqual(expected['msg'], res['msg'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '充值金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 充值金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于500000
+? ^
+
+2020-03-05 14:14:28,909 - [test04_withdraw.py-->line:89]- ERROR: id不是当前登录的用户用例不通过
+2020-03-05 14:14:28,909 - [test04_withdraw.py-->line:90]- ERROR: 1007 != 1002
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test04_withdraw.py", line 76, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1007 != 1002
+2020-03-05 14:14:29,039 - [test04_withdraw.py-->line:89]- ERROR: 会员id为字符串用例不通过
+2020-03-05 14:14:29,039 - [test04_withdraw.py-->line:90]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test04_withdraw.py", line 76, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:14:29,310 - [test04_withdraw.py-->line:89]- ERROR: 提现金额为0用例不通过
+2020-03-05 14:14:29,310 - [test04_withdraw.py-->line:90]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test04_withdraw.py", line 76, in test_withdaw
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:14:29,430 - [test04_withdraw.py-->line:89]- ERROR: 提现金额为负数用例不通过
+2020-03-05 14:14:29,430 - [test04_withdraw.py-->line:90]- ERROR: '提现金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 提现金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于5000000
+? ^                    +
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test04_withdraw.py", line 77, in test_withdaw
+    self.assertEqual(expected['msg'], res['msg'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '提现金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 提现金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于5000000
+? ^                    +
+
+2020-03-05 14:14:29,550 - [test04_withdraw.py-->line:89]- ERROR: 提现金额为空用例不通过
+2020-03-05 14:14:29,550 - [test04_withdraw.py-->line:90]- ERROR: '提现金额为空' != '余额为空'
+- 提现金额为空
++ 余额为空
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test04_withdraw.py", line 77, in test_withdaw
+    self.assertEqual(expected['msg'], res['msg'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '提现金额为空' != '余额为空'
+- 提现金额为空
++ 余额为空
+
+2020-03-05 14:14:29,794 - [test04_withdraw.py-->line:89]- ERROR: 提现金额-大于50万用例不通过
+2020-03-05 14:14:29,794 - [test04_withdraw.py-->line:90]- ERROR: '提现金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 提现金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于5000000
+? ^                    +
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test04_withdraw.py", line 77, in test_withdaw
+    self.assertEqual(expected['msg'], res['msg'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '提现金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 提现金额必须大于0并且小于或者等于500000
+? ^^^
++ 余额必须大于0并且小于或者等于5000000
+? ^                    +
+
+2020-03-05 14:14:31,823 - [test05_add.py-->line:79]- ERROR: 会员id为字符串用例不通过
+2020-03-05 14:14:31,823 - [test05_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:14:31,962 - [test05_add.py-->line:79]- ERROR: 会员id为小数用例不通过
+2020-03-05 14:14:31,962 - [test05_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:14:32,222 - [test05_add.py-->line:79]- ERROR: 标题为空格用例不通过
+2020-03-05 14:14:32,222 - [test05_add.py-->line:80]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-05 14:14:32,362 - [test05_add.py-->line:79]- ERROR: 借款金额为整数用例不通过
+2020-03-05 14:14:32,362 - [test05_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:14:32,512 - [test05_add.py-->line:79]- ERROR: 借款金额为字符串用例不通过
+2020-03-05 14:14:32,512 - [test05_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:14:33,022 - [test05_add.py-->line:79]- ERROR: 年利率为整数用例不通过
+2020-03-05 14:14:33,022 - [test05_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:14:33,152 - [test05_add.py-->line:79]- ERROR: 年利率为字符串用例不通过
+2020-03-05 14:14:33,152 - [test05_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:14:46,774 - [test05_add.py-->line:79]- ERROR: 借款期限为字符串用例不通过
+2020-03-05 14:14:46,774 - [test05_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:14:46,894 - [test05_add.py-->line:79]- ERROR: 借款期限为小数用例不通过
+2020-03-05 14:14:46,894 - [test05_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:14:47,405 - [test05_add.py-->line:79]- ERROR: 借款类型为小数用例不通过
+2020-03-05 14:14:47,405 - [test05_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:14:47,545 - [test05_add.py-->line:79]- ERROR: 借款类型为字符串用例不通过
+2020-03-05 14:14:47,545 - [test05_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:14:47,802 - [test05_add.py-->line:79]- ERROR: 竞标天数为小数用例不通过
+2020-03-05 14:14:47,802 - [test05_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:14:47,922 - [test05_add.py-->line:79]- ERROR: 竞标天数为字符串用例不通过
+2020-03-05 14:14:47,922 - [test05_add.py-->line:80]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test05_add.py", line 67, in test_add
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-03-05 14:14:50,170 - [test10_update.py-->line:65]- ERROR: 更新成功-昵称10位用例不通过
+2020-03-05 14:14:50,170 - [test10_update.py-->line:66]- ERROR: 0 != 2
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test10_update.py", line 53, in test_update
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 2
+2020-03-05 14:14:50,530 - [test10_update.py-->line:65]- ERROR: 更新失败-会员id为字符串用例不通过
+2020-03-05 14:14:50,530 - [test10_update.py-->line:66]- ERROR: 2 != 0
+Traceback (most recent call last):
+  File "D:\project\apitest\testcases\test10_update.py", line 53, in test_update
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0

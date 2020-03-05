@@ -61,8 +61,6 @@ class TestInvest(unittest.TestCase):
         # 保存用户初始金额
         CaseData.start_user_amount = jsonpath.jsonpath(res, '$..leave_amount')[0]
 
-        CaseData.user_amount = str(CaseData.start_user_amount // 100 * 100 + 100)
-
     def setUp(self):
         # 在竞标状态的项目id
         sql = 'SELECT id FROM  futureloan.loan WHERE status = 2'
@@ -84,12 +82,7 @@ class TestInvest(unittest.TestCase):
             sql1 = 'SELECT amount FROM futureloan.loan WHERE id={};'.format(CaseData.loan_id)
             project_amount = self.db.find_one(sql1)['amount']
             sql2 = 'SELECT sum(amount) FROM futureloan.invest WHERE loan_id={};'.format(CaseData.loan_id)
-            invest_amount = self.db.find_one(sql2)['sum(amount)']
-            if invest_amount == None:
-                invest_amount = 0
-            print(CaseData.loan_id)
-            print(project_amount)
-            print(invest_amount)
+            invest_amount = self.db.find_one(sql2)['sum(amount)'] or 0
             CaseData.project_amount = str(project_amount - invest_amount)
 
             # 查询用户的初始投标数量
@@ -112,7 +105,7 @@ class TestInvest(unittest.TestCase):
             invest_amount = self.db.find_one(sql2)['sum(amount)']
             CaseData.leave_amount = str(round(project_amount - invest_amount, 1))
             expected = eval(replace_data(case['expected']))
-            # 对预期结果和相应结果进行断言
+            # 对预期结果和响应结果进行断言
         try:
             self.assertEqual(expected['code'], res['code'])
             self.assertEqual(expected['msg'], res['msg'])

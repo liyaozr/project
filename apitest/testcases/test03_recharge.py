@@ -59,7 +59,7 @@ class TestRecharge(unittest.TestCase):
         expected = eval(case['expected'])
         row = case['case_id'] + 1
         # 获取结果
-        # 发送请求之前,获取用余额
+        # 发送请求之前,获取用户余额
         if case['check_sql']:
             sql = 'SELECT leave_amount FROM futureloan.member WHERE mobile_phone={}'.format(
                 conf.get('test_data', 'phone'))
