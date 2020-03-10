@@ -1,0 +1,372 @@
+2020-03-09 15:05:33,171 - [test_main.py-->line:61]- ERROR: 登录用例不通过
+2020-03-09 15:05:33,172 - [test_main.py-->line:62]- ERROR: 'success' != '登录成功！'
+- success
++ 登录成功！
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 56, in test_recharge
+    self.assertEqual(expected['msg'], res['msg'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: 'success' != '登录成功！'
+- success
++ 登录成功！
+
+2020-03-09 15:06:47,963 - [test_main.py-->line:61]- ERROR: 登录用例不通过
+2020-03-09 15:06:47,964 - [test_main.py-->line:62]- ERROR: 'success' != '登录成功！'
+- success
++ 登录成功！
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 56, in test_recharge
+    self.assertEqual(expected['msg'], res['msg'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: 'success' != '登录成功！'
+- success
++ 登录成功！
+
+2020-03-09 15:06:49,711 - [test_main.py-->line:61]- ERROR: 分享-京东用例不通过
+2020-03-09 15:06:49,711 - [test_main.py-->line:62]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 55, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:06:50,177 - [test_main.py-->line:61]- ERROR: 领券-京东用例不通过
+2020-03-09 15:06:50,177 - [test_main.py-->line:62]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 55, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:06:51,512 - [test_main.py-->line:61]- ERROR: 商品详情页-淘宝用例不通过
+2020-03-09 15:06:51,513 - [test_main.py-->line:62]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 55, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:06:51,938 - [test_main.py-->line:61]- ERROR: 分享-淘宝用例不通过
+2020-03-09 15:06:51,938 - [test_main.py-->line:62]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 55, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:06:52,730 - [test_main.py-->line:61]- ERROR: 商品详情页-拼多多用例不通过
+2020-03-09 15:06:52,730 - [test_main.py-->line:62]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 55, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:06:53,033 - [test_main.py-->line:61]- ERROR: 分享-拼多多用例不通过
+2020-03-09 15:06:53,033 - [test_main.py-->line:62]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 55, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:23:10,841 - [test_main.py-->line:61]- ERROR: 登录用例不通过
+2020-03-09 15:23:10,841 - [test_main.py-->line:62]- ERROR: 'success' != '登录成功！'
+- success
++ 登录成功！
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 56, in test_recharge
+    self.assertEqual(expected['msg'], res['msg'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: 'success' != '登录成功！'
+- success
++ 登录成功！
+
+2020-03-09 15:23:12,529 - [test_main.py-->line:61]- ERROR: 分享-京东用例不通过
+2020-03-09 15:23:12,530 - [test_main.py-->line:62]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 55, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:23:13,013 - [test_main.py-->line:61]- ERROR: 领券-京东用例不通过
+2020-03-09 15:23:13,013 - [test_main.py-->line:62]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 55, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:23:14,300 - [test_main.py-->line:61]- ERROR: 商品详情页-淘宝用例不通过
+2020-03-09 15:23:14,301 - [test_main.py-->line:62]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 55, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:23:14,698 - [test_main.py-->line:61]- ERROR: 分享-淘宝用例不通过
+2020-03-09 15:23:14,698 - [test_main.py-->line:62]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 55, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:23:15,470 - [test_main.py-->line:61]- ERROR: 商品详情页-拼多多用例不通过
+2020-03-09 15:23:15,470 - [test_main.py-->line:62]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 55, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:23:15,756 - [test_main.py-->line:61]- ERROR: 分享-拼多多用例不通过
+2020-03-09 15:23:15,756 - [test_main.py-->line:62]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 55, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:31:24,639 - [test_main.py-->line:64]- ERROR: 分享-京东用例不通过
+2020-03-09 15:31:24,639 - [test_main.py-->line:65]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 55, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:31:25,143 - [test_main.py-->line:64]- ERROR: 领券-京东用例不通过
+2020-03-09 15:31:25,143 - [test_main.py-->line:65]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 55, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:31:26,770 - [test_main.py-->line:64]- ERROR: 商品详情页-淘宝用例不通过
+2020-03-09 15:31:26,771 - [test_main.py-->line:65]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 55, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:31:27,208 - [test_main.py-->line:64]- ERROR: 分享-淘宝用例不通过
+2020-03-09 15:31:27,208 - [test_main.py-->line:65]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 55, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:31:28,025 - [test_main.py-->line:64]- ERROR: 商品详情页-拼多多用例不通过
+2020-03-09 15:31:28,025 - [test_main.py-->line:65]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 55, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:31:28,318 - [test_main.py-->line:64]- ERROR: 分享-拼多多用例不通过
+2020-03-09 15:31:28,318 - [test_main.py-->line:65]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 55, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:32:17,648 - [test_main.py-->line:65]- ERROR: 登录用例不通过
+2020-03-09 15:32:17,648 - [test_main.py-->line:66]- ERROR: '登陆成功！' != '登录成功！'
+- 登陆成功！
+?  ^
++ 登录成功！
+?  ^
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 57, in test_recharge
+    self.assertEqual(expected['msg'], res['msg'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '登陆成功！' != '登录成功！'
+- 登陆成功！
+?  ^
++ 登录成功！
+?  ^
+
+2020-03-09 15:32:19,381 - [test_main.py-->line:65]- ERROR: 分享-京东用例不通过
+2020-03-09 15:32:19,381 - [test_main.py-->line:66]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 56, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:32:19,864 - [test_main.py-->line:65]- ERROR: 领券-京东用例不通过
+2020-03-09 15:32:19,864 - [test_main.py-->line:66]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 56, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:32:21,356 - [test_main.py-->line:65]- ERROR: 商品详情页-淘宝用例不通过
+2020-03-09 15:32:21,356 - [test_main.py-->line:66]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 56, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:32:21,771 - [test_main.py-->line:65]- ERROR: 分享-淘宝用例不通过
+2020-03-09 15:32:21,771 - [test_main.py-->line:66]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 56, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:32:22,771 - [test_main.py-->line:65]- ERROR: 商品详情页-拼多多用例不通过
+2020-03-09 15:32:22,771 - [test_main.py-->line:66]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 56, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:32:23,065 - [test_main.py-->line:65]- ERROR: 分享-拼多多用例不通过
+2020-03-09 15:32:23,065 - [test_main.py-->line:66]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 56, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:34:07,414 - [test_main.py-->line:65]- ERROR: 分享-京东用例不通过
+2020-03-09 15:34:07,415 - [test_main.py-->line:66]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 56, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:34:07,885 - [test_main.py-->line:65]- ERROR: 领券-京东用例不通过
+2020-03-09 15:34:07,885 - [test_main.py-->line:66]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 56, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:34:09,250 - [test_main.py-->line:65]- ERROR: 商品详情页-淘宝用例不通过
+2020-03-09 15:34:09,250 - [test_main.py-->line:66]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 56, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:34:09,669 - [test_main.py-->line:65]- ERROR: 分享-淘宝用例不通过
+2020-03-09 15:34:09,669 - [test_main.py-->line:66]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 56, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:34:10,456 - [test_main.py-->line:65]- ERROR: 商品详情页-拼多多用例不通过
+2020-03-09 15:34:10,456 - [test_main.py-->line:66]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 56, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-03-09 15:34:10,757 - [test_main.py-->line:65]- ERROR: 分享-拼多多用例不通过
+2020-03-09 15:34:10,758 - [test_main.py-->line:66]- ERROR: 1 != 0
+Traceback (most recent call last):
+  File "D:\project\xiangcheng\testcases\test_main.py", line 56, in test_recharge
+    self.assertEqual(expected['code'], res['code'])
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
